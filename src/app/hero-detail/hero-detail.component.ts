@@ -11,7 +11,9 @@ import {Location} from '@angular/common';
 })
 export class HeroDetailComponent implements OnInit {
 
-  @Input() hero: Hero;
+  // no longer needed because this is no longer used <app-hero-detail [hero]="selectedHero"></app-hero-detail>
+  // @Input() hero: Hero;
+  hero: Hero;
 
   constructor(
     private route: ActivatedRoute,
